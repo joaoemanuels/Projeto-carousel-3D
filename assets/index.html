@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/home-page-styles.css">
+    <script src="/assets/scripts/card-animation.js"></script>
+    <title>Tensei Slime</title>
+</head>
+<body>
+    <nav class="s-menu">
+        <ul>
+            <li class="s-menu__item">
+                <a href="index.html">Pagina inicial</a>
+            </li>
+            <li class="s-menu__item">
+                <a href="../pages/diablo/diablo1.html">DIABLO</a>
+            </li>
+            <li class="s-menu__item s-menu__icon">
+                <img src="/assets/images/icons/icon.svg" >
+            </li>
+            <li class="s-menu__item">
+                <a href="../pages/rimuru-tempest/tensei1.html">RIMURU TEMPEST</a>
+            </li>
+            <li class="s-menu__item">
+                <a href="../pages/shizue-izawa/shizue1.html">SHIZUE IZAWA</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="s-container">
+        <div class="s-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+            <a href="../pages/diablo/diablo1.html" class="s-card" id="tensei-01">
+                <img class="s-card__background" src="/assets/images/pic-sm-bg-s1.jpg">
+                <img class="s-card__image" src="/assets/images/tensei-01.png" alt="DIABLO" >
+                <h2 class="s-card__title">DIABLO</h2>
+            </a>
+            <a href="../pages/rimuru-tempest/tensei1.html" class="s-card" id="tensei-02">
+                <img class="s-card__background" src="/assets/images/pic-sm-bg-s2.jpg">
+                <img class="s-card__image" src="/assets/images/tensei-02.png" alt="RIMURU TEMPEST" >
+                <h2 class="s-card__title">RIMURU TEMPEST</h2>
+            </a>
+            <a href="../pages/shizue-izawa/shizue1.html" class="s-card" id="tensei-03">
+                <img class="s-card__background" src="/assets/images/pic-sm-bg-s3.jpg">
+                <img class="s-card__image" src="/assets/images/tensei-03.png" alt="SHIZUE IZAWA" >
+                <h2 class="s-card__title">SHIZUE IZAWA</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="s-controller">
+        <div id="1" onclick="selectCarouselItem(this)" class="s-controller__button s-controller__button--active">
+            01
+        </div>
+        <div id="2" onclick="selectCarouselItem(this)" class="s-controller__button">
+            02
+        </div>
+        <div id="3"  onclick="selectCarouselItem(this)" class="s-controller__button">
+            03
+        </div>
+        <div class="s-controller__line"></div>
+    </div>
+
+
+
+</body>
+</html>
